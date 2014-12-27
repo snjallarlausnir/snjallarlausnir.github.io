@@ -25,40 +25,42 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$(function(){
+$("#contactForm").jqBootstrapValidation({
+    submitSuccess: function ($form, event) {
+            var xhr = $.ajax({
+            type: 'POST',
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            dataType: 'json',
+            data: {
+                key: 'HknuMOc39IjrkAv9-D-gTw',
+                message: {
+                text: $("#email_content").val() + "\n\n" + $("#name").val() + " - Sími:" + $("#phone").val(),
+                subject: "Fyrirspurn - " + $("#name").val(),
+                from_email: $("#email").val(),
+                from_name: $("#name").val(),
+                to: [{
+                        "email": "snjallarlausnir@gmail.com",
+                        "name": $("#name").val()
+                    }]
+                }
+            }
+            });
+            $("#email_send").attr("disabled",true);
+            $("#email_send").html("...");
 
-  $('#contactForm').submit(function(){
+            xhr.done(function(data) {
+                $('#console').append(JSON.stringify(data));
+                bootbox.alert("Takk fyrir að hafa samband, við munum svara þér eins fljótt og auðið er");
+                $('#contactForm')[0].reset();
+                $("#email_send").attr("disabled",false);
+                $("#email_send").html("Senda");
+            });
 
-    var xhr = $.ajax({
-      type: 'POST',
-      url: "https://mandrillapp.com/api/1.0/messages/send.json",
-      dataType: 'json',
-      data: {
-        key: 'HknuMOc39IjrkAv9-D-gTw',
-        message: {
-          text: $("#email_content").val() + "\n\n" + $("#name").val() + " - Sími:" + $("#phone").val(),
-          subject: "Fyrirspurn - " + $("#name").val(),
-          from_email: $("#email").val(),
-          from_name: $("#name").val(),
-          to: [{
-                  "email": "snjallarlausnir@gmail.com",
-                  "name": $("#name").val()
-              }]
-        }
-      }
-    });
-
-    xhr.done(function(data) {
-      $('#console').append(JSON.stringify(data));
-      bootbox.alert("Takk fyrir að hafa samband, við munum svara þér eins fljótt og auðið er");
-      $('#contactForm')[0].reset();
-    });
-
-    xhr.fail(function(jqXHR, textStatus, errorThrown) {
-      $('#console').append(jqXHR.responseText);
-    });
-
-  return false;
-  });
-
+            xhr.fail(function(jqXHR, textStatus, errorThrown) {
+                $('#console').append(jqXHR.responseText);
+            });
+    }
 });
+
+$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
