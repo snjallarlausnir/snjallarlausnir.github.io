@@ -25,5 +25,7 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+$(function () { 
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+ });
 
