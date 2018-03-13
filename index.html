@@ -2,311 +2,45 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Snjallar lausnir</title>
+    <style>
+        html {
+            width:100%;
+            height:100%;
+        }
+        body {
+            overflow-x: hidden;
+            font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+            background-color:black;
+            width:100%;
+            height:100%;
+            display:block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/agency.css" rel="stylesheet">
-
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        }
+        #logo {
+            height:50px;
+            width:250px;
+            display:block;
+            width:250px;
+            background-repeat:no-repeat;
+            background-size: 250px 51px;
+            background-image:url('img/logos/SnjallarLausnirHvitt.png');
+            margin: 0 auto;
+        }
+    </style>
 
 </head>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="width:250px;background-repeat:no-repeat;background-size: 250px 51px;background-image:url('img/logos/SnjallarLausnirHvitt.png')"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Þjónusta</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Okkar reynsla</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Teymið</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Hafðu samband</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Snjallar lausnir</div>
-                <div class="intro-heading">Við höfum lausnina</div>
-                <a href="#services" class="page-scroll btn btn-xl">Meira</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Þjónusta Section -->
-    <section id="services" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Þjónusta</h2>
-                    <h3 class="section-subheading text-muted">Við hjá Snjöllum lausnum tökum að okkur allskyns verkefni, stór sem smá. Við höfum reynslu í mörgum forritunarmálum og umhverfum, og höfum unnið að endurbætingum á ýmsum kerfum. Okkar sérþekking liggur þó í vefflausnum. Ef þú ert að leita af fljótri og góðri þjónustu til að endurbæta gamalt kerfi, smíða vefsíðu eða hanna kerfi frá grunni, hafðu þá samband við okkur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Góð Samskipti</h4>
-                    <p class="text-muted">Við hjá Snjöllum lausnum gerum mikið út á góð og persónuleg samskipti við okkar viðskiptamenn. Við sníðum okkar lausn að þínum þörfum.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-tablet fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Hönnun</h4>
-                    <p class="text-muted">Öll okkar kerfi eru hönnuð með allar tegundir tækja í huga þeas. snjallsíma, spjaldtölvur og hefðbundnar tölvur.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Öryggi</h4>
-                    <p class="text-muted">Kerfin okkar eru með öryggi í fyrirrúmi og eru öll samskipti dulkóðuð.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Um okkur Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Okkar reynsla</h2>
-                    <h3 class="section-subheading text-muted">Hér fyrir neðan má sjá dæmi um verkefni sem við höfum unnið að</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/reynsla/netbokhald.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Netbókhald</h4>
-                                    <h4 class="subheading">Verkbókhaldskerfi</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Við unnum að hönnun og smíði á verkbókhaldskerfi fyrir netbokhald.is. Verkbókhaldskerfið var útfært veflausn sem hönnuð var fyrir tölvur, spjaldtölvur sem og snjallsíma.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/reynsla/T-9.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>T-9 Vörslusviptingar</h4>
-                                    <h4 class="subheading">Bókunarkerfi</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Við unnum að hönnun og smíði á nýju bókunarkerfi fyrir T-9, sem byggt var á gömlu kerfi frá þeim. Bókunarkerfið var útfært sem veflausn sem hönnuð var fyrir tölvur, spjaldtölvur sem og snjallsíma.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/reynsla/salesforce.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Salesforce</h4>
-                                    <h4 class="subheading">Salesforce Lightning</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Við hjá Snjöllum lausnum höfum unnið mikið við Salesforce, bæði sérsniðnar lausnir á viðbótum og einnig höfum við unnið að native Salesforce viðbót, sem við smíðuðum frá grunni.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Teymið</h2>
-                    <h3 class="section-subheading text-muted">
-                        Snjallar lausnir var stofnað árið 2015 og höfum við unnið í ýmsum verkefnum síðan.
-                        Við leggjum mikla áherslu á persónulega þjónustu og góð samskipti við okkar viðskiptavini.
-                        Mesta áherslu höfum við lagt á veflausnir en höfum þó þekkingu á ýmsum öðrum sviðum eins og Salesforce, Desktop lausnum, öppum í snjallsíma ofl.
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Haukur Rósinkranz</h4>
-                        <p class="text-muted">Tölvunarfræðingur</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Bergvin Örn Kristjánsson</h4>
-                        <p class="text-muted">Tölvunarfræðingur</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Hermann Hafsteinsson</h4>
-                        <p class="text-muted">Grafískur hönnuður</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Hafðu Samband</h2>
-                    <h3 class="section-subheading text-muted">Við munum svara þér eins fljótt og auðið er. Einnig er hægt að ná í okkur í síma 7772450</h3>
-                </div>
-            </div>
-                    <form name="sentMessage" method="POST" action="http://formspree.io/snjallarlausnir@gmail.com">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nafn*" id="name" name="name" required data-validation-required-message="Sláðu inn nafn." id="email_name">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Netfang*" id="email" name="email" required data-validation-required-message="Sláðu inn netfang" id="email_address"
-data-validation-email-message="Þarf að vera gilt netfang"
->
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Símanúmer*" id="phone"  name="phone" required data-validation-required-message="Sláðu inn símanúmer" id="email_phone">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea id="email_content" class="form-control" placeholder="Skilaboð *" id="message" name="message" required data-validation-required-message="Sláðu inn skilaboð."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button id="email_send" type="submit" class="btn btn-xl">Senda</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Snjallar lausnir 2017</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/bootbox.js"></script>
-
+<body>
+    <div id="logo" style=""></div>
     <script src="js/snjallarlausnir.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
